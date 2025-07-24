@@ -1,0 +1,242 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-style {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* shear style */
+.display-flex{
+    display: flex;
+    align-items: center;
+}
+body{
+    margin: 0px;
+}
+header,
+.plant-section,
+.flower-container{
+    max-width: 1250px;
+    width: 90%;
+    margin: 0 auto;
+}
+.text-primary {
+    color: rgba(0, 0, 0, 0.5);
+}
+section{
+    margin-top: 100px;
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+}
+.section-description{
+    text-align: center;
+    margin-top: 10px;
+}
+.text-align{
+    text-align: center;
+}
+/* nav style */
+.header-section{
+    justify-content: space-between;
+}
+nav ul {
+    gap: 40px;
+    
+}
+nav ul li {
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.hero-title{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+#hero-text-color{
+    color: #E95A08;
+}
+/* plant Section */
+.plant-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+.plant-title{
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.plant-price{
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn-primary{
+    background-color: #E95A08;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    padding: 15px 60px;
+}
+.btn-primary:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid #E95A08;
+}
+
+/* flower and plant section */
+.flower-image-container{
+    flex: 1;
+}
+.flower-container{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+.flower-first-image{
+    width: 90%;
+}
+.flower-badge{
+    width: 20%;
+    margin-top: -110px;
+    margin-left: 320px;
+    position: absolute;
+    filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.25));
+}
+.flower-title{
+    font-weight: 700;
+    font-size: 3.25rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.flower-store-contant{
+    flex: 1;
+}
+.flower-store-contant ul{
+    padding-left: 30px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.flower-store-contant ul li{
+    margin-bottom: 20px;
+}
+/* Join Us Section */
+.join-bg{
+    background-image: url('../images/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+}
+#join-title{
+    margin-bottom: 30px;
+}
+.join-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join-textfild{
+    width: 400px;
+    border: none;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 15px 300px 15px 15px;
+}
+#btn-subscribe{
+    border: none;
+    color: white;
+    background-color: #E95A08;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+#btn-subscribe:hover{
+    background-color: #ff6a00;
+    border: 1px solid #E95A08;
+    
+}
+
+
+
+/* responcive style */
+@media screen and (max-width:576px){
+    .nav-item li:nth-child(1),
+    .nav-item li:nth-child(2),
+    .nav-item li:nth-child(3),
+    .flower-badge{
+    display: none;
+}
+.hero-section{
+    flex-direction: column-reverse;
+}
+.hero-section img {
+    width: 100%;
+}
+.hero-title{
+    font-size: 2rem;
+}
+section{
+    margin-top: 50px;
+}
+/* responcive plant section */
+.plant-container{
+    grid-template-columns: repeat(2, 1fr);
+}
+.plant-image{
+    width: 100%;
+}
+.btn-primary{
+    padding: 15px 20px;
+}
+/* flower and flant */
+.flower-container{
+    flex-direction: column;
+    padding-top: 0px;
+}
+.flower-first-image{
+    width: 100%;
+}
+/* join */
+.join-section {
+    padding: 0 auto;
+}
+.join-textfild{
+    width: 150px;
+    border: none;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 15px 100px 15px 15px;
+}
+#join-title{
+   font-size: 2rem;
+   margin-bottom: 20px;
+}
+.join-bg{
+    height: 250px;
+}
+}
