@@ -148,7 +148,7 @@ nav a{
 }
 /* Join Us Section */
 .join-bg{
-    background-image: url('../images/news-letter-bg.png');
+    background-image: url('../assets/news-letter-bg.png');
     background-size: cover;
     background-position: center;
     height: 500px;
