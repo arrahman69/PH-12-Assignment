@@ -20,7 +20,7 @@
 /* shear style */
 .display-flex{
     display: flex;
-    align-items: center;
+    align-items: center; 
 }
 body{
     margin: 0px;
@@ -70,6 +70,7 @@ nav a{
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 0;
+
 }
 #hero-text-color{
     color: #E95A08;
@@ -182,6 +183,32 @@ nav a{
     
 }
 
+/* footer */
+.footer-section{
+    gap: 100px;
+    align-items: start;
+}
+footer{
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-description{
+    max-width: 350px;
+}
+.footer-nav-item{
+    display: grid;
+    gap: 24px;
+}
+.footer-icon{
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    
+}
+
 
 
 /* responcive style */
@@ -239,4 +266,6 @@ section{
 .join-bg{
     height: 250px;
 }
+/* footer section */
+
 }
